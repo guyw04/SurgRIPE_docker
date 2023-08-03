@@ -58,7 +58,7 @@ RUN mkdir -p $JUPYTER_CONFIG_DIR \
 COPY pip.conf  $VIRTUAL_ENV/pip.conf
 
 # Clone the conf files into the docker container
-RUN git clone https://github.com/CVRS-Hamlyn/SurgRIPETest.git /home/newuser/surg_t/
+RUN git clone https://github.com/CVRS-Hamlyn/SurgRIPETest.git /home/newuser/SurgRIPE/
 
 # Core Python libs
 # 16/08: pip new resolver is causing backtracking issues
