@@ -81,10 +81,7 @@ RUN python3 -m pip install --upgrade --no-cache-dir \
   pip==21.0 \
   setuptools
 
-# Scientist stack
-COPY surg_t_requirements.txt /home/newuser/surg_t/surg_t_requirements.txt
-#COPY bash.bashrc /etc/bash.bashrc
-RUN python3 -m pip install --use-deprecated=legacy-resolver --upgrade --no-cache-dir -r /home/newuser/surg_t/surg_t_requirements.txt
+RUN python3 -m pip install --use-deprecated=legacy-resolver --upgrade --no-cache-dir -r /home/newuser/SurgRIPE/requirements.txt
 
 
 ####### CREATE A USER #########
