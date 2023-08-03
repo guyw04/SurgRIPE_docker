@@ -1,5 +1,5 @@
 FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
-MAINTAINER Samyakh Tukra <samyakh.tukra17@himperial.ac.uk>
+MAINTAINER Alistair Weld <a.weld20@himperial.ac.uk>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV FORCE_COLOR_PROMPT=yes
