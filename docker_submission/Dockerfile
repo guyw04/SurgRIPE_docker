@@ -1,4 +1,5 @@
-FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
+#FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime 
+FROM pytorch/pytorch:2.0.0-cuda12.0-cudnn8.9.3-runtime-ubuntu22.04  
 MAINTAINER Alistair Weld <a.weld20@himperial.ac.uk>
 
 ENV DEBIAN_FRONTEND noninteractive
