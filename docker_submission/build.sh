@@ -2,4 +2,4 @@
 
 echo "building surgt:latest image"
 
-docker build -t surgt:latest -f Dockerfile .
+docker build -t surgripe:latest -f Dockerfile .
