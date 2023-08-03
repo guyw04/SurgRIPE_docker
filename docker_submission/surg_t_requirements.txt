@@ -1,7 +1,0 @@
-opencv-contrib-python
-PyYAML
-natsort
-tqdm
-dload
-matplotlib
-pytest
