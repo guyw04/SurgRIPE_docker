@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-echo "building surgt:latest image"
+echo "building surgripe:latest image"
 
 docker build -t surgripe:latest -f Dockerfile .
