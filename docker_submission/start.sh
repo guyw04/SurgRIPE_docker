@@ -14,7 +14,7 @@ done
 
 
 swd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-img=surgt:latest
+img=surgripe:latest
 
 
 echo "Starting container $img ..."
@@ -28,8 +28,8 @@ docker run \
       --env=TERM="xterm-color"\
       --env="QT_X11_NO_MITSHM=1" \
       --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-      -v $swd/../tracking:/home/newuser/surg_t/tracking \
-      -v $swd/../docker:/home/newuser/surg_t/docker \
+      -v $swd/../tracking:/home/newuser/surgripe/tracking \
+      -v $swd/../docker:/home/newuser/surgripe/docker \
       --name="surgt-container" \
       --privileged=True \
       $img \
