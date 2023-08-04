@@ -15,5 +15,5 @@ First, all the test and train folders will be put under the folder 'Dataset'
         ├── TEST
         └── TEST_OCC
 
-Then, mound the dataset folder into the docker image below:
--v /LOCALFILEPATH/Dataset:/home/newuser/SurgRIPE/Dataset
+Then, mound the dataset folder into the docker image below
+> -v /LOCALFILEPATH/Dataset:/home/newuser/SurgRIPE/Dataset
