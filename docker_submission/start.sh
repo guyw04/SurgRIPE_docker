@@ -4,7 +4,7 @@ xhost +
 
 
 # define ROS_IP
-machine_ip=(`hostname -I`)
+machine_ip='hostname -I'
 
 until docker ps > /dev/null
 do
@@ -28,8 +28,7 @@ docker run \
       --env=TERM="xterm-color"\
       --env="QT_X11_NO_MITSHM=1" \
       --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-      -v $swd/../tracking:/home/newuser/surgripe/tracking \
-      -v $swd/../docker:/home/newuser/surgripe/docker \
-      --name="surgt-container" \
+      -v /LOCALFILEPATH/Dataset:/home/newuser/SurgRIPE/Dataset \
+      --name="surgripe-container" \
       --privileged=True \
       $img \

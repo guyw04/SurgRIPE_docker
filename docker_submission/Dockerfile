@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:2.0.0-cuda12.0-cudnn8.9.3-runtime-ubuntu22.04  
+FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV FORCE_COLOR_PROMPT=yes
