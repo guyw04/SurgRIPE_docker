@@ -2,6 +2,9 @@
 To use the docker. you need to edit in start.sh line 31 about the data folder.
 
 First, all the test and train folders will be put under the folder 'Dataset'
+
+### Dataset Folder Structure
+.
 Dataset
 ├── LND
 │   ├── TRAIN
