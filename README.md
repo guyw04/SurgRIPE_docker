@@ -17,4 +17,5 @@ Both the test and train datasets should be put under the same folder 'Dataset' a
 
 line 31 in start.sh mounts this folder into the docker image as shown:
 > -v /LOCALFILEPATH/Dataset:/home/newuser/SurgRIPE/Dataset
+
 Please change LOCALFILEPATH accordingly
