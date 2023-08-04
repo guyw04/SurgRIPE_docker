@@ -1,7 +1,7 @@
 # SurgRIPE_docker
-To use the docker. you need to edit in start.sh line 31 about the data folder.
+BEFORE you run the docker, you NEED to edit line 31 in start.sh. Follow this link to download the [challenge data](https://www.synapse.org/#!Synapse:syn51471789/wiki/623244).
 
-First, all the test and train folders will be put under the folder 'Dataset'
+Both the test and train datasets should be put under the same folder 'Dataset' as follows:
 
 ### Dataset Folder Structure
     .
@@ -15,5 +15,6 @@ First, all the test and train folders will be put under the folder 'Dataset'
         ├── TEST
         └── TEST_OCC
 
-Then, mound the dataset folder into the docker image below
+line 31 in start.sh mounts this folder into the docker image as shown:
 > -v /LOCALFILEPATH/Dataset:/home/newuser/SurgRIPE/Dataset
+Please change LOCALFILEPATH accordingly
