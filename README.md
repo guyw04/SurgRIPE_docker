@@ -15,7 +15,8 @@ Both the test and train datasets should be put under the same folder 'Dataset' a
         ├── TEST
         └── TEST_OCC
 
-line 31 in start.sh mounts this folder into the docker image as shown:
-> -v /LOCALFILEPATH/Dataset:/home/newuser/SurgRIPE/Dataset
+### How to Run the docker
 
+> sudo docker run -it --gpus all -v /LOCALFILEPATH/Dataset:/home/newuser/SurgRIPE/Dataset surgripe:latest
+> 
 Please change LOCALFILEPATH accordingly
