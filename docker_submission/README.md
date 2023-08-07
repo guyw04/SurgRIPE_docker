@@ -8,5 +8,5 @@
     + Option 2: upload the SurgTbenchmarking folder (containing your code) on GitHub and use: RUN **https://github.com/CVRS-Hamlyn/SurgRIPETest.git /home/newuser/surg_ripe/**
 4. Run the following commands to build Docker and test it is working: **sh build.sh**, **sh start.sh**.
 5. Compress docker image for uploading : **docker save -o surgt.tar surgripe:latest**
-6. Upload to synapse the docker image and the docker file  -  **ALSO** please provide a README text file giving instructions on how to run the docker image and code.
+6. Upload to synapse the **docker image**, the **docker file** and the **trained model weight** -  **ALSO** please provide a **README** text file giving instructions on how to run the docker image and code.
     + If somehow the file size is too large, please upload a .tar to any remote file storage of choice Google Drive, Box, DropBox etc
